@@ -39,6 +39,8 @@ body {
     line-height: 1.5;
 }
 
+/* ---------HOME PAGE----------- */
+
 /* Header */
 header {
     background-color: transparent;
@@ -150,9 +152,11 @@ ul.dropdown-menu .dropdown-item:hover {
     box-shadow: var(--box-shadow);
 }
 
-.services .card:hover, .about .place-img:hover {
+.services .card:hover,
+.about .place-img:hover {
     border: .5px solid orange;
 }
+
 .title-style {
     text-transform: capitalize;
     font-size: 45px;
@@ -160,28 +164,66 @@ ul.dropdown-menu .dropdown-item:hover {
     font-weight: 800;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 /* about section */
 section.about .place-img {
     background: url("images/c4.jpg");
     height: 80vh;
-    width:auto;
+    width: auto;
     background-size: cover;
     background-repeat: no-repeat;
 }
-section.about .about-content h2{
+
+section.about .about-content h2 {
     width: 80%;
     max-width: 425px;
 }
-section.about .about-content p{
+
+section.about .about-content p {
     line-height: 30px;
-    color:black;
+    color: black;
 }
-section.about .about-content p span ion-icon{
-    background:orange;
+
+section.about .about-content p span ion-icon {
+    background: orange;
     border-radius: 45px;
 }
-.btn{
+
+.btn {
     text-transform: uppercase !important;
+}
+
+/* ---------USER REGISTRATION----------- */
+section.user-showcase {
+    height: 50vh;
+    background: url("images/banner3.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+section.user-showcase h5{
+    text-transform: uppercase;
+    border: .5px solid var(--bs-warning) ;
+}
+section.user-showcase div.z-3 {
+    height: 100%;
+    opacity: .8;
+}
+section.user-showcase div.card{
+    background:white;
+    opacity: 1;
+    height: auto;
+
+}
+section.user-showcase .card{
+    top: 50%;
+    left: 25%;
+    right: 25%;
+}
+.inner-signIn{
+    text-align: left;
+}
+.inner-signIn a{
+    text-decoration: none;
 }
 
 /* Media query for showcase  */
@@ -190,17 +232,20 @@ section.about .about-content p span ion-icon{
         font-size: 2rem;
         line-height: 35px;
     }
-section.about .z-3, section.about .checks
-{
-    display: none;
-}
-section.about div.text-center{
-margin:0 !important;
-}
-section.about a{
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-}
+
+    section.about .z-3,
+    section.about .checks {
+        display: none;
+    }
+
+    section.about div.text-center {
+        margin: 0 !important;
+    }
+
+    section.about a {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
 
 
     .showcase .z-3 .btn {
@@ -225,15 +270,30 @@ section.about a{
         width: auto !important;
         max-width: 425px;
     }
-    section.about h2{
-        line-height: 25px ;
+
+    section.about h2 {
+        line-height: 25px;
         font-size: 25px;
     }
-    section.about p{
+
+    section.about p {
         line-height: 20px !important;
     }
-    section.services h3.title-style{
-        line-height:30px !important;
+
+    section.services h3.title-style {
+        line-height: 30px !important;
         font-size: 30px;
     }
+
+    /* ---------USER REGISTRATION----------- */
+section.user-showcase .card{
+    width: 100% !important;
+    position:static !important;
+}
+section.user-showcase div.overlay{
+    display: none;
+}
+section.user-showcase div.width-100{
+    width: 100% !important;
+}
 }
