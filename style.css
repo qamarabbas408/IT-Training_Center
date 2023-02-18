@@ -39,6 +39,10 @@ body {
     line-height: 1.5;
 }
 
+a{
+    text-decoration: none;
+    cursor:pointer;
+}
 /* ---------HOME PAGE----------- */
 
 /* Header */
@@ -225,6 +229,14 @@ section.user-showcase .card{
 .inner-signIn a{
     text-decoration: none;
 }
+/* ---------END USER REGISTRATION----------- */
+
+/* ---------USER LOGIN----------- */
+section.login div.head1{
+    color:white;
+    line-height: 2rem;
+}
+
 
 /* Media query for showcase  */
 @media (max-width:768px) {
@@ -259,6 +271,11 @@ section.user-showcase .card{
     .services .col-md-6 {
         margin-bottom: .5rem
     }
+
+        /* ---------USER LOGIN----------- */
+section.login .otherColumn .row{
+    margin-left: 25%;
+}
 }
 
 @media (max-width: 425px) {
@@ -296,4 +313,16 @@ section.user-showcase div.overlay{
 section.user-showcase div.width-100{
     width: 100% !important;
 }
+
+    /* ---------USER LOGIN----------- */
+section.login .otherColumn a, section.login .otherColumn .col-md-7{
+    font-size: .8rem;
+}
+section.login .otherColumn h2{
+    display: none;
+}
+section.login .otherColumn .row{
+    margin-left: 0;
+}
+
 }
