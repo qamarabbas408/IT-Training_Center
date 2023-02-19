@@ -39,10 +39,24 @@ body {
     line-height: 1.5;
 }
 
-a{
+a {
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
 }
+
+a:hover {
+    color: var(--bs-warning);
+}
+.text-capital{
+    text-transform: uppercase;
+}
+.page-title {
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem !important;
+
+}
+
 /* ---------HOME PAGE----------- */
 
 /* Header */
@@ -204,38 +218,94 @@ section.user-showcase {
     background-size: cover;
     background-position-y: center;
 }
-section.user-showcase h5{
+
+section.user-showcase h5 {
     text-transform: uppercase;
-    border: .5px solid var(--bs-warning) ;
+    border: .5px solid var(--bs-warning);
 }
+
 section.user-showcase div.z-3 {
     height: 100%;
     opacity: .8;
 }
-section.user-showcase div.card{
-    background:white;
+
+section.user-showcase div.card {
+    background: white;
     opacity: 1;
     height: auto;
 
 }
-section.user-showcase .card{
+
+section.user-showcase .card {
     top: 50%;
     left: 25%;
     right: 25%;
 }
-.inner-signIn{
+
+.inner-signIn {
     text-align: left;
 }
-.inner-signIn a{
+
+.inner-signIn a {
     text-decoration: none;
 }
+
 /* ---------END USER REGISTRATION----------- */
 
 /* ---------USER LOGIN----------- */
-section.login div.head1{
-    color:white;
+section.login div.head1 {
+    color: white;
     line-height: 2rem;
 }
+
+/* ---------END USER LOGIN----------- */
+
+
+/* ---------COURSES ----------- */
+section.courses .card-title .page-title {
+    font-size: 1.2rem !important;
+}
+
+section.courses .card-text {
+    font-size: 16px !important;
+}
+
+section.courses .card:hover {
+    border: .5px solid var(--bs-warning);
+    box-shadow: var(--box-shadow);
+    transition: .4s;
+}
+
+section.courses .shover:hover {
+    color: var(--bs-warning) !important;
+    transition: .2s;
+}
+
+section.courses .shover,
+section.courses ion-icon {
+    color: var(--bs-primary) !important;
+}
+/* ---------END COURSES----------- */
+
+/* ---------View A COURSES----------- */
+section.viewCourse{
+    height: auto;
+    background:linear-gradient(white,rgb(241, 255, 46))     
+}
+section.viewCourse .courseSpecs p span span {
+    color: var(--bs-secondary);
+    }
+div.navtabs .text-small{
+    font-size: .8rem;
+}
+div.author-img img{
+    height: auto;
+}
+div.author a:hover, a.institute:hover{
+    text-decoration: underline;
+}
+/* ---------END VIEWs A COURSES----------- */
+
 
 
 /* Media query for showcase  */
@@ -269,13 +339,24 @@ section.login div.head1{
     }
 
     .services .col-md-6 {
-        margin-bottom: .5rem
+        margin-bottom: .5rem;
     }
 
-        /* ---------USER LOGIN----------- */
-section.login .otherColumn .row{
-    margin-left: 25%;
-}
+    /* ---------USER LOGIN----------- */
+    section.login .otherColumn .row {
+        margin-left: 25%;
+    }
+    header#site-header button.navbar-toggler{
+        background:var(--bs-warning);
+    }
+/* VIEW a COURSE */
+    div.courseSpecs .outline-white{
+        width:100% !important;
+       }
+/* END VIEW a COURSE */
+
+    
+
 }
 
 @media (max-width: 425px) {
@@ -303,26 +384,45 @@ section.login .otherColumn .row{
     }
 
     /* ---------USER REGISTRATION----------- */
-section.user-showcase .card{
-    width: 100% !important;
-    position:static !important;
-}
-section.user-showcase div.overlay{
-    display: none;
-}
-section.user-showcase div.width-100{
-    width: 100% !important;
-}
+    section.user-showcase .card {
+        width: 100% !important;
+        position: static !important;
+    }
+
+    section.user-showcase div.overlay {
+        display: none;
+    }
+
+    section.user-showcase div.width-100 {
+        width: 100% !important;
+    }
 
     /* ---------USER LOGIN----------- */
-section.login .otherColumn a, section.login .otherColumn .col-md-7{
-    font-size: .8rem;
+    section.login .otherColumn a,
+    section.login .otherColumn .col-md-7 {
+        font-size: .8rem;
+    }
+
+    section.login .otherColumn h2 {
+        display: none;
+    }
+
+    section.login .otherColumn .row {
+        margin-left: 0;
+    }
+    /* ---------View A COURSE----------- */
+    section.viewCourse {
+        padding: 1rem;
+    }
+   div.courseSpecs img{
+    width: 4rem;
+   }
+   div.courseSpecs h1, div.courseSpecs span ion-icon{
+    font-size: 1.5rem;
+   }
+   div.author-img img{
+    height: 8rem;
 }
-section.login .otherColumn h2{
-    display: none;
-}
-section.login .otherColumn .row{
-    margin-left: 0;
-}
+
 
 }
