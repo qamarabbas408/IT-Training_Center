@@ -306,123 +306,28 @@ div.author a:hover, a.institute:hover{
 }
 /* ---------END VIEWs A COURSES----------- */
 
-
-
-/* Media query for showcase  */
-@media (max-width:768px) {
-    .showcase .z-3 h3 {
-        font-size: 2rem;
-        line-height: 35px;
-    }
-
-    section.about .z-3,
-    section.about .checks {
-        display: none;
-    }
-
-    section.about div.text-center {
-        margin: 0 !important;
-    }
-
-    section.about a {
-        padding-top: 5px !important;
-        padding-bottom: 5px !important;
-    }
-
-
-    .showcase .z-3 .btn {
-        padding: 5px 5px 5px 5px;
-        font-size: 15px;
-        border-radius: 0 !important;
-        text-transform: capitalize;
-
-    }
-
-    .services .col-md-6 {
-        margin-bottom: .5rem;
-    }
-
-    /* ---------USER LOGIN----------- */
-    section.login .otherColumn .row {
-        margin-left: 25%;
-    }
-    header#site-header button.navbar-toggler{
-        background:var(--bs-warning);
-    }
-/* VIEW a COURSE */
-    div.courseSpecs .outline-white{
-        width:100% !important;
-       }
-/* END VIEW a COURSE */
-
-    
-
+/* USER LOGGED IN */
+nav .imageHolder img{
+    height: 2rem
 }
-
-@media (max-width: 425px) {
-    .showcase .z-3 {
-        width: 100%;
-    }
-
-    .services .card {
-        width: auto !important;
-        max-width: 425px;
-    }
-
-    section.about h2 {
-        line-height: 25px;
-        font-size: 25px;
-    }
-
-    section.about p {
-        line-height: 20px !important;
-    }
-
-    section.services h3.title-style {
-        line-height: 30px !important;
-        font-size: 30px;
-    }
-
-    /* ---------USER REGISTRATION----------- */
-    section.user-showcase .card {
-        width: 100% !important;
-        position: static !important;
-    }
-
-    section.user-showcase div.overlay {
-        display: none;
-    }
-
-    section.user-showcase div.width-100 {
-        width: 100% !important;
-    }
-
-    /* ---------USER LOGIN----------- */
-    section.login .otherColumn a,
-    section.login .otherColumn .col-md-7 {
-        font-size: .8rem;
-    }
-
-    section.login .otherColumn h2 {
-        display: none;
-    }
-
-    section.login .otherColumn .row {
-        margin-left: 0;
-    }
-    /* ---------View A COURSE----------- */
-    section.viewCourse {
-        padding: 1rem;
-    }
-   div.courseSpecs img{
-    width: 4rem;
-   }
-   div.courseSpecs h1, div.courseSpecs span ion-icon{
-    font-size: 1.5rem;
-   }
-   div.author-img img{
-    height: 8rem;
+nav .imageHolder span{
+    font-weight: 300;
 }
-
-
+nav .imageHolder:hover{
+    cursor:pointer;
+    color: var(--bs-warning);   
+}
+ul.nav-tabs .nav-link{
+    border:none;
+    outline: none !important;
+    font-size: 1rem;
+}
+.active{
+    background:transparent !important;
+}
+ul.nav-tabs li.nav-item{
+    background:aliceblue !important;
+}
+ul.nav-tabs li.nav-item:hover{
+    background:var(--bs-warning) !important;
 }
